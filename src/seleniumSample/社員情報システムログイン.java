@@ -34,7 +34,7 @@ public class 社員情報システムログイン {
 			driver.findElement(By.name("ログイン")).click();
 			Thread.sleep(5000); // Let the user actually see something!
 		} finally {
-			driver.quit();
+			//driver.quit();
 		}
 	}
 }
