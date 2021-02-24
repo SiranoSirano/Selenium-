@@ -2,6 +2,7 @@ package seleniumSample;
 
 import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -28,7 +29,9 @@ public class 社員情報システムログイン {
 		driver.findElement(By.name("pass")).sendKeys("フォームに打ち込むパスワード");
 
 		// ログインボタンを押す
-		driver.findElement(By.className("login")).click();
+
+
+		driver.findElement(By.name("ログイン")).sendKeys(Keys.ENTER);
 		Thread.sleep(5000); // Let the user actually see something!
 		driver.quit();
 
